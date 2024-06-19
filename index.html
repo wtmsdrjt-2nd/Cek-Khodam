@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Check Your Khodam</title>
+    <title>Woilah Cik</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <div class="card">
-            <h1>CHECK YOUR KHODAM</h1>
-            <form id="nameForm">
-                <input type="text" id="nameInput" placeholder="Masukkan nama anda" required>
-                <button type="submit">Check</button>
-            </form>
-            <p id="result"></p>
-        </div>
+    <div class="card">
+        <h1>Check Your Khodam Awokawok</h1>
+        <p>Created by Ajat Ganteng</p>
+        <form id="nameForm">
+            <input type="text" id="nameInput" placeholder="Masukkan nama anda" required>
+            <button type="submit">Check</button>
+        </form>
+        <p id="result"></p>
+    </div>
     </div>
     
     <script>
-    	alert("Terimakasih sudah berpartisipasi 🎉\n\nSemoga Beruntung!\n- Pai");
+    	alert("Terimakasih sudah berpartisipasi 🎉\n\nSemoga Beruntung!\n- Ajat Ganteng");
     	document.getElementById('nameForm').addEventListener('submit', function(event) {
     	event.preventDefault();
     	const name = document.getElementById('nameInput').value;
@@ -29,7 +30,7 @@
 
     function generateKhodam(name) {
     // Fungsi sederhana untuk menampilkan "khodam" dari nama
-    	const khodams = ['Ayam Berkutut', 'Lumba-Lumba Demak', 'Bohlam Lampu', 'Buaya Nigeria', 'Naga Bearbend', 'Pohon Palem','Penyu Isriwil', 'Perkakas Kopling', 'Landak Trenggalek', 'Ultraman Orb'];
+    	const khodams = ['Ayam Berkutut', 'Lumba-Lumba Demak', 'Bohlam Lampu', 'Bagas Driblle', 'Alok Jamsut', 'Kak Gem', 'Uni Bakwan', 'Buaya Nigeria', 'Naga Bearbend', 'Pohon Palem','Penyu Isriwil', 'Perkakas Kopling', 'Landak Trenggalek', 'Ultraman Orb'];
     	const index = name.length % khodams.length;
     	return khodams[index];
     
